@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cheta{
+            color: green;
+            text-align: center;
+        }
+        #div{
+            border: 3px dashed green;
+            width: 25em;
+            padding: 1em;
+            margin-left: 30em;
+        }
+        #para{
+            text-align: justify;
+        }
+        .Image{
+            width: 10em;
+            height: 15em;
+            margin-top: 5em;
+
+        }
+        #button1{
+            width: 8em;
+            padding:.5em;
+            border: 2px solid green;
+            height: 3.5em;
+            border-radius: 1em;
+            background-color: greenyellow;
+            margin-left: 47em;
+            margin-top: 5em;
+        }
+        #div-image{
+            border: 2px dashed green;
+            width: 57em;
+            padding-left: 5em;
+            padding-bottom: 4em;
+            margin-top: 5em;
+            margin-left: 14em;
+        }
+        #kosi{
+            color: purple;
+            text-align: center;
+        }
+        #kosipara{
+            text-align: justify;
+            padding: 1em;
+            margin-left: 47em;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h1 id="cheta">My short story</h1>
+        <p id="para">Hey you..., I am Chetachukwu. I am chocolate skinned, smart and beautiful.
+        I am a web develolper, a pharmacist and  an enterpreneur. I come from the Eastern Nigerian tribe Igbo </p>
+    </div>
+    <button id="button1"onclick="showImages()">See Images</button>
+    <button id="button1"onclick="hideImages()">Hide Images</button>
+    <div id="div-image">
+        <img class="Image" src="./IMG/IMG-20230716-WA0067.jpg" alt="Image of a car">
+        <img class="Image" src="./IMG/IMG-20230719-WA0001.jpg" alt="Image of a hair sales girl">
+        <img class="Image" src="./IMG/IMG-20230719-WA0007.jpg" alt="Image of a mic">
+        <img class="Image" src="./IMG/IMG-20230719-WA0008.jpg" alt="Image of groceries">
+        <img class="Image" src="./IMG/Screenshot_20230726-173952 (2).png" alt="Image of boy">
+    </div>
+    <script>
+        let button = document.getElementById('div-image')
+        button.style.visibility = 'hidden';
+        let showImages = () => {
+            button.style.visibility = 'visible'
+        }
+        function hideImages() {
+            button.style.visibility = 'hidden';
+        }
+    </script>
+    <h2 id="kosi">Kosi's short story</h2>
+    <p id="kosipara">What's up! <br>My name is kosiso, I am 14 years<br>old and a student of Predesaf College.<br>
+        I have a passion for hair dressing and hope <br>to open a salon when I grow although<br>I also want to be a doctor.
+    </p>
+</body>
+</html>
